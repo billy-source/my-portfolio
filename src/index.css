@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+body {
+  background: #0f172a;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+.typing {
+  overflow: hidden;
+  border-right: 3px solid #22c55e;
+  white-space: nowrap;
+  animation: typing 4s steps(40) infinite alternate, blink .7s infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
+}
